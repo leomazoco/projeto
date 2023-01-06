@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: linear-gradient(45deg, #131086, #b621f3);
+    height: 100vh;
+    width: 100wh;
+}
+
+main {
+    position: relative;
+    width: 100wh;
+    height: 100vh;
+}
+
+.container-conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    padding: 10px;
+
+    background-color: white;
+    height: 500px;
+    width: 350px;
+    border-radius: 20px;
+    
+    transform: translate(-50%, -50%);
+
+    grid-template-columns: 50% 50%;
+    display: grid;
+}
+
+.login-direita {
+    display: none;
+}
+
+.login-esquerda {
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-header > h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.login-header > p {
+    margin-bottom: 20px;
+    opacity: .7;
+    font-size: 16px;
+}
+
+.formulario-login {
+    padding-left: 10px;
+}
+
+input[type='text'],
+input[type='password'] {
+    border: 1px solid black;
+    height: 45px;
+    padding: 0 2rem;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    border-radius: 70px;
+    padding: 20px;
+}
+
+.form-item label:not(.checkboxLabel) {
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0 10px;
+    transform: translate(30px, -10px);
+    font-size: 14px;;
+}
+
+.form-item{
+    margin-bottom: 15px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 20px;
+}
+
+input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    accent-color: #413f81;
+}
+
+button {
+    border: none;
+    background-image: linear-gradient(45deg, #131086, #4a155f); 
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 45px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-image: linear-gradient(45deg, #131086, #530909); 
+}
+
+.login-form-footer > a {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    background-color: #c0a449;
+    height: 45px;
+}
+
+.login-form-footer > a:hover {
+    background-color: #a78e3c;
+}
